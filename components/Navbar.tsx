@@ -40,7 +40,7 @@ export default function Navbar() {
             <path d="M8 14 L4 20 L8 17 Z M16 14 L20 20 L16 17 Z" fill="currentColor" opacity="0.85" />
           </svg>
           <span className="font-display text-lg font-semibold tracking-tight text-ink">
-            NovaWing
+            Aviorafly
           </span>
         </a>
 

@@ -14,7 +14,7 @@ import { tools, allProducts } from "@/data/products";
 const content = {
   heroHeadline: "Everything behind the build.",
   heroSubhead:
-    "NovaWing stocks model kits, airframes, FPV drone parts, and workshop tools for builders who read spec sheets for fun — from SKYFORGE prefab kits to the tools that finish them.",
+    "Aviorafly stocks model kits, airframes, FPV drone parts, and workshop tools for builders who read spec sheets for fun — from SKYFORGE prefab kits to the tools that finish them.",
   toolsTitle: "The full catalog.",
   toolsDescription:
     "Model kits, airframes, FPV drone parts, and the tools and materials that go into building and finishing every one of them.",
