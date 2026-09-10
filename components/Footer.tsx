@@ -4,7 +4,7 @@ const columns = [
     links: [{ label: "Full catalog", href: "#tools" }],
   },
   {
-    heading: "Studio",
+    heading: "Company",
     links: [
       { label: "About", href: "#about" },
       { label: "Contact", href: "#contact" },

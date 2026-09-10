@@ -1,18 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 export default function Contact({
   headline,
   description,
-  phone,
   email,
   address,
 }: {
   headline: string;
   description: string;
-  phone: string;
   email: string;
   address: string;
 }) {
@@ -39,15 +37,6 @@ export default function Contact({
           className="border border-hairline bg-bg p-8"
         >
           <ul className="flex flex-col gap-6">
-            <li className="flex items-start gap-4">
-              <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center border border-hairline2 text-blueprint">
-                <Phone size={16} />
-              </span>
-              <div>
-                <p className="text-xs text-ink-faint">Phone</p>
-                <p className="mt-0.5 font-mono text-sm text-ink">{phone}</p>
-              </div>
-            </li>
             <li className="flex items-start gap-4">
               <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center border border-hairline2 text-ignition">
                 <Mail size={16} />

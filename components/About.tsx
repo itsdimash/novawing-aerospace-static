@@ -22,7 +22,7 @@ const items = [
   {
     icon: Users,
     title: "Stocked for builders",
-    body: "Restocks and new listings are driven by what the community is actually asking for, not just what's easy to source.",
+    body: "Restocks and new listings are driven by what customers are actually asking for, not just what's easy to source.",
   },
 ];
 

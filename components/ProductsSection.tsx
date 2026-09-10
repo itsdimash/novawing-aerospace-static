@@ -41,8 +41,8 @@ export default function ProductsSection({
           transition={{ staggerChildren: 0.08 }}
           className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
         >
-          {products.map((p) => (
-            <ProductCard key={p.slug} product={p} accent={accent} />
+          {products.map((p, i) => (
+            <ProductCard key={p.slug} product={p} accent={accent} priority={i < 4} />
           ))}
         </motion.div>
       </div>

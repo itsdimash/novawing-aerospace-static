@@ -21,8 +21,7 @@ const content = {
   contactHeadline: "Talk to the team.",
   contactDescription:
     "Questions about a build, stock levels, or a bulk order for a launch day or classroom — reach out and someone will get back to you directly.",
-  phone: "[number]",
-  email: "[email]",
+  email: "wongofficialryan@gmail.com",
   address: "RM 2902, 29/F, HO KING COMMERCIAL CENTRE, 2-16 FA YUEN STREET, MONGKOK, KOWLOON HK",
 };
 
@@ -48,7 +47,6 @@ export default function Home() {
         <Contact
           headline={content.contactHeadline}
           description={content.contactDescription}
-          phone={content.phone}
           email={content.email}
           address={content.address}
         />
