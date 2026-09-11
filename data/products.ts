@@ -16,33 +16,6 @@ export interface Product {
 
 export const tools: Product[] = [
   {
-    slug: "clayo-airbrush",
-    name: "CLAYO Airbrush",
-    category: "tool",
-    tagline: "Applying paint by spraying when painting models.",
-    description: "Applying paint by spraying when painting models.",
-    price: 244.31,
-    image: "/tools/Picture33.png",
-    specs: [
-      { label: "Department", value: "Tools" },
-      { label: "Price (incl. VAT)", value: "$244.31" },
-    ],
-  },
-  {
-    slug: "airbrush-acrylic-paint-water-based",
-    name: "Airbrush acrylic paint, water-based",
-    category: "tool",
-    tagline: "Painting models with airbrush.",
-    description: "Painting models with airbrush.",
-    price: 37.3,
-    image: "/tools/Picture34.png",
-    specs: [
-      { label: "Type", value: "Acrylic, water-based" },
-      { label: "Department", value: "Tools" },
-      { label: "Price (incl. VAT)", value: "$37.30" },
-    ],
-  },
-  {
     slug: "skyforge-quick-build-model-kit-type-1",
     name: "SKYFORGE Quick Build Model Kit, Type 1",
     category: "tool",
