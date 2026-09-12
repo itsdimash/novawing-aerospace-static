@@ -1,12 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Stats from "@/components/Stats";
 import ProductsSection from "@/components/ProductsSection";
-import Parallax from "@/components/Parallax";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import { tools, allProducts } from "@/data/products";
+import { tools } from "@/data/products";
 
 // All site copy lives here in code. To change any of it, edit this file
 // directly and redeploy -- there's no CMS or admin dashboard behind this site.
@@ -30,7 +28,6 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero headline={content.heroHeadline} subhead={content.heroSubhead} />
-        <Stats totalCount={allProducts.length} />
         <ProductsSection
           id="tools"
           eyebrow="Full catalog"
@@ -40,7 +37,6 @@ export default function Home() {
           accent="steel"
           tone="bg"
         />
-        <Parallax />
         <About />
         <Contact
           headline={content.contactHeadline}
