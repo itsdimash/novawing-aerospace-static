@@ -24,7 +24,7 @@ const mono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aviorafly — Model Kits, RC Aircraft & Drone Parts",
+  title: "Aviorafly",
   description:
     "Aviorafly stocks model kits, RC airframes, FPV drone parts, and workshop tools for builders who read spec sheets for fun — from SKYFORGE prefab kits to the tools that finish them.",
 };
