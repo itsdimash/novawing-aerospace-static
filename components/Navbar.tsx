@@ -29,15 +29,18 @@ export default function Navbar() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#top" className="flex items-center gap-2.5">
-          <svg width="22" height="22" viewBox="0 0 24 24" className="text-blueprint">
-            <path
-              d="M12 2 L16 10 L16 17 L8 17 L8 10 Z"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.6"
-              strokeLinejoin="round"
-            />
-            <path d="M8 14 L4 20 L8 17 Z M16 14 L20 20 L16 17 Z" fill="currentColor" opacity="0.85" />
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            className="text-blueprint"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M21 16v-2l-8-5V3.5A1.5 1.5 0 0 0 11.5 2 1.5 1.5 0 0 0 10 3.5V9l-8 5v2l8-2.5V19l-2.5 1.5V22l4-1 4 1v-1.5L13 19v-5.5Z" />
           </svg>
           <span className="font-display text-lg font-semibold tracking-tight text-ink">
             Aviorafly

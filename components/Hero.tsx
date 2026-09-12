@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useMotionTemplate, useMotionValue, useReducedMotion } from "framer-motion";
-import BlueprintRocket from "./BlueprintRocket";
+import BlueprintAirplane from "./BlueprintAirplane";
 
 export default function Hero({
   headline,
@@ -63,9 +63,9 @@ export default function Hero({
           </div>
 
           <div className="mt-14 flex items-center gap-6 font-mono text-xs text-ink-faint">
-            <span>In-house design</span>
+            <span>Curated catalog</span>
             <span className="h-px w-8 bg-hairline2" />
-            <span>Flight-tested kits</span>
+            <span>Specs verified</span>
           </div>
         </motion.div>
 
@@ -75,7 +75,7 @@ export default function Hero({
           transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
           className="relative"
         >
-          <BlueprintRocket />
+          <BlueprintAirplane />
         </motion.div>
       </div>
     </section>

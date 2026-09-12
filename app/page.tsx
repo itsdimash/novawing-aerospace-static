@@ -1,4 +1,3 @@
-import Preloader from "@/components/Preloader";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
@@ -28,7 +27,6 @@ const content = {
 export default function Home() {
   return (
     <>
-      <Preloader />
       <Navbar />
       <main>
         <Hero headline={content.heroHeadline} subhead={content.heroSubhead} />
