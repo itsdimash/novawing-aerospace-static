@@ -21,7 +21,7 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 450.47,
+    price: 450,
     image: "/tools/Picture35.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
@@ -30,7 +30,7 @@ export const tools: Product[] = [
       { label: "Wingspan", value: "500 mm" },
       { label: "Included", value: "Fast electric motor, battery, DC charger, 4 Type C batteries" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$450.47" },
+      { label: "Price (incl. VAT)", value: "$450.00" },
     ],
   },
   {
@@ -39,14 +39,14 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 396.81,
+    price: 400,
     image: "/tools/Picture36.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
       { label: "Wingspan", value: "550 mm" },
       { label: "Included", value: "DC charger (batteries are purchased separately), electric motor, battery pack" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$396.81" },
+      { label: "Price (incl. VAT)", value: "$400.00" },
     ],
   },
   {
@@ -55,7 +55,7 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 720.09,
+    price: 750,
     image: "/tools/Picture37.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
@@ -64,7 +64,7 @@ export const tools: Product[] = [
       { label: "Wingspan", value: "530 mm" },
       { label: "Included", value: "Electric motor, battery, DC charger, 4 Type C batteries" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$720.09" },
+      { label: "Price (incl. VAT)", value: "$750.00" },
     ],
   },
   {
@@ -73,7 +73,7 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 739.88,
+    price: 750,
     image: "/tools/Picture38.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
@@ -85,7 +85,7 @@ export const tools: Product[] = [
       { label: "Propeller", value: "from 11\" (depending on the powerplant)" },
       { label: "Battery", value: "3000-6000mAh, 4-6S LiPo" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$739.88" },
+      { label: "Price (incl. VAT)", value: "$750.00" },
     ],
   },
   {
@@ -94,7 +94,7 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 589.35,
+    price: 600,
     image: "/tools/Picture39.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
@@ -104,7 +104,7 @@ export const tools: Product[] = [
       { label: "Wing area", value: "11.17 dm2" },
       { label: "Wing Loading", value: "14.3 g / dm2 (5.4 oz / ft2)" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$589.35" },
+      { label: "Price (incl. VAT)", value: "$600.00" },
     ],
   },
   {
@@ -113,7 +113,7 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 478.26,
+    price: 500,
     image: "/tools/Picture40.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
@@ -122,7 +122,7 @@ export const tools: Product[] = [
       { label: "Flight weight", value: "890g" },
       { label: "Features", value: "dynamic paint and stripes on the lower part of the hull for visual orientation; optional landing gear with clips; safe pushing propellers; angled (conical) wing and tail tips; options for installing an FPV camera in the nose and in the cockpit; the wing is collapsible (in two parts) for quick assembly and storage" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$478.26" },
+      { label: "Price (incl. VAT)", value: "$500.00" },
     ],
   },
   {
@@ -131,7 +131,7 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 630.13,
+    price: 650,
     image: "/tools/Picture41.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
@@ -140,7 +140,7 @@ export const tools: Product[] = [
       { label: "Construction weight", value: "≈650 g (depends on configuration)" },
       { label: "Construction material", value: "balsa, carbon fiber, plastic" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$630.13" },
+      { label: "Price (incl. VAT)", value: "$650.00" },
     ],
   },
   {
@@ -149,7 +149,7 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 478.05,
+    price: 500,
     image: "/tools/Picture42.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
@@ -162,7 +162,7 @@ export const tools: Product[] = [
       { label: "ESC (regulator)", value: "20 A, with integrated BEC" },
       { label: "Servos", value: "6 pcs. × 9 g" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$478.05" },
+      { label: "Price (incl. VAT)", value: "$500.00" },
     ],
   },
   {
@@ -171,7 +171,7 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 492.34,
+    price: 500,
     image: "/tools/Picture43.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
@@ -185,7 +185,7 @@ export const tools: Product[] = [
       { label: "Servos", value: "4 pcs. × 9 g" },
       { label: "Propeller", value: "4-bladed, 8 × 6" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$492.34" },
+      { label: "Price (incl. VAT)", value: "$500.00" },
     ],
   },
   {
@@ -194,7 +194,7 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 724.42,
+    price: 750,
     image: "/tools/Picture44.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
@@ -213,7 +213,7 @@ export const tools: Product[] = [
       { label: "Included", value: "Servos, speed controller, battery, receiver" },
       { label: "Separately purchased", value: "radio equipment, charger" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$724.42" },
+      { label: "Price (incl. VAT)", value: "$750.00" },
     ],
   },
   {
@@ -222,7 +222,7 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 385.26,
+    price: 400,
     image: "/tools/Picture45.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
@@ -242,7 +242,7 @@ export const tools: Product[] = [
       { label: "Included", value: "Servos, speed controller" },
       { label: "Separately purchased", value: "battery, charger" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$385.26" },
+      { label: "Price (incl. VAT)", value: "$400.00" },
     ],
   },
   {
@@ -251,14 +251,14 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 63.77,
+    price: 65,
     image: "/tools/Picture46.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
       { label: "Battery Type", value: "6S LiPo" },
       { label: "Capacity", value: "1500 mAh" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$63.77" },
+      { label: "Price (incl. VAT)", value: "$65.00" },
     ],
   },
   {
@@ -267,7 +267,7 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 134.8,
+    price: 150,
     image: "/tools/Picture47.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
@@ -275,7 +275,7 @@ export const tools: Product[] = [
       { label: "Screen", value: "4.3\"" },
       { label: "Video receiver", value: "Built-in, with DVR function (video recording)" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$134.80" },
+      { label: "Price (incl. VAT)", value: "$150.00" },
     ],
   },
   {
@@ -284,7 +284,7 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 201.69,
+    price: 200,
     image: "/tools/Picture48.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
@@ -294,7 +294,7 @@ export const tools: Product[] = [
       { label: "2.4 GHz Base Module", value: "C1300 system" },
       { label: "Supported protocols", value: "Futaba S-FHSS, FrSky D16, FrSky D8" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$201.69" },
+      { label: "Price (incl. VAT)", value: "$200.00" },
     ],
   },
   {
@@ -303,12 +303,12 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of Consumables & materials equipment from SKYFORGE. See the details below for full specs.",
-    price: 170.21,
+    price: 200,
     specs: [
       { label: "Brand", value: "SKYFORGE" },
       { label: "In the assortment (7 items)", value: "Balsa, 300×300 mm sheet, 0.8 mm thickness (1/32\"); Balsa, 300×300 mm sheet, 1.5 mm thickness (1/32\"); Balsa, 300×300 mm sheet, 3 mm thickness (1/32\"); Carbon fiber round tube, 3×1.5 mm, 1 m; Carbon fiber rod, 2 mm, 1 m; Carbon fiber rod, 1.2 mm, 1m; Carbon fiber rod, 1 mm, 1 m" },
       { label: "Department", value: "Consumables & materials" },
-      { label: "Price (incl. VAT)", value: "$170.21" },
+      { label: "Price (incl. VAT)", value: "$200.00" },
     ],
   },
   {
@@ -317,7 +317,7 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of Consumables & materials equipment from SKYFORGE. See the details below for full specs.",
-    price: 18.02,
+    price: 20,
     image: "/tools/Picture49.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
@@ -325,7 +325,7 @@ export const tools: Product[] = [
       { label: "Area", value: "1 m2" },
       { label: "Manufacturer Part number", value: "S-FG4" },
       { label: "Department", value: "Consumables & materials" },
-      { label: "Price (incl. VAT)", value: "$18.02" },
+      { label: "Price (incl. VAT)", value: "$20.00" },
     ],
   },
   {
@@ -334,13 +334,13 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of Consumables & materials equipment from SKYFORGE. See the details below for full specs.",
-    price: 150.63,
+    price: 150,
     image: "/tools/Picture50.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
       { label: "Package contents (3 pcs.)", value: "Protective film for aircraft, transparent; Protective film for aircraft, yellow; Protective film for aircraft, green" },
       { label: "Department", value: "Consumables & materials" },
-      { label: "Price (incl. VAT)", value: "$150.63" },
+      { label: "Price (incl. VAT)", value: "$150.00" },
     ],
   },
   {
@@ -349,12 +349,12 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE Available in 4 sizes; * Rubber wheel for RC aircraft, 100 mm; Rubb...",
     description: "A piece of Consumables & materials equipment from SKYFORGE Available in 4 sizes; * Rubber wheel for RC aircraft, 100 mm; Rubber wheel for radio-controlled aircraft, 70 mm; Rubber wheel for radio-controlled aircraft, 50 mm; Rubber wheel for radio-controlled aircraft, 25 mm. See the details below for full specs.",
-    price: 58.78,
+    price: 60,
     image: "/tools/Picture51.png",
     specs: [
       { label: "Brand", value: "SKYFORGE Available in 4 sizes; * Rubber wheel for RC aircraft, 100 mm; Rubber wheel for radio-controlled aircraft, 70 mm; Rubber wheel for radio-controlled aircraft, 50 mm; Rubber wheel for radio-controlled aircraft, 25 mm" },
       { label: "Department", value: "Consumables & materials" },
-      { label: "Price (incl. VAT)", value: "$58.78" },
+      { label: "Price (incl. VAT)", value: "$60.00" },
     ],
   },
   {
@@ -363,12 +363,12 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE Available in 4 sizes; * Carbon fiber tube (fabric wrap), 5 × 3 mm;...",
     description: "A piece of Consumables & materials equipment from SKYFORGE Available in 4 sizes; * Carbon fiber tube (fabric wrap), 5 × 3 mm; Carbon fiber tube (cloth winding), 8 × 6 mm; Carbon fiber tube (fabric wrap), 10 × 8 mm; Carbon fiber tube (fabric wrap), 12 × 10 mm. See the details below for full specs.",
-    price: 111.69,
+    price: 100,
     image: "/tools/Picture52.png",
     specs: [
       { label: "Brand", value: "SKYFORGE Available in 4 sizes; * Carbon fiber tube (fabric wrap), 5 × 3 mm; Carbon fiber tube (cloth winding), 8 × 6 mm; Carbon fiber tube (fabric wrap), 10 × 8 mm; Carbon fiber tube (fabric wrap), 12 × 10 mm" },
       { label: "Department", value: "Consumables & materials" },
-      { label: "Price (incl. VAT)", value: "$111.69" },
+      { label: "Price (incl. VAT)", value: "$100.00" },
     ],
   },
   {
@@ -377,13 +377,13 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of Consumables & materials equipment from SKYFORGE. See the details below for full specs.",
-    price: 34.66,
+    price: 35,
     image: "/tools/Picture53.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
       { label: "Available sizes (4 diameters)", value: "Carbon fiber rod, 1 mm; Carbon fiber rod, 1.5 mm; Carbon fiber rod, 2 mm; Carbon fiber rod, 3 mm" },
       { label: "Department", value: "Consumables & materials" },
-      { label: "Price (incl. VAT)", value: "$34.66" },
+      { label: "Price (incl. VAT)", value: "$35.00" },
     ],
   },
   {
@@ -392,13 +392,13 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "Tie rods (pushers) of the RC aircraft steering wheel drive.",
     description: "Made by SKYFORGE. Tie rods (pushers) of the RC aircraft steering wheel drive.",
-    price: 38.79,
+    price: 40,
     image: "/tools/Picture54.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
       { label: "Package Contents", value: "100 pcs." },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$38.79" },
+      { label: "Price (incl. VAT)", value: "$40.00" },
     ],
   },
   {
@@ -407,13 +407,13 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 199.22,
+    price: 200,
     image: "/tools/Picture55.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
       { label: "Complete set (3 sizes, 20 pieces each•", value: "Spare parts for aircraft, replacement parts 12×24 mm — 20 pcs.; Aircraft spare parts, replacement parts 16x29 mm — 20 pcs.; Spare parts for aircraft, replacement parts 20 × 36 mm — 20 pcs." },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$199.22" },
+      { label: "Price (incl. VAT)", value: "$200.00" },
     ],
   },
   {
@@ -422,13 +422,13 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 24.24,
+    price: 25,
     image: "/tools/Picture56.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
       { label: "Motor shaft diameter", value: "3.0 mm" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$24.24" },
+      { label: "Price (incl. VAT)", value: "$25.00" },
     ],
   },
   {
@@ -437,11 +437,11 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "Foam cutting in the manufacture of models.",
     description: "Foam cutting in the manufacture of models.",
-    price: 73.88,
+    price: 75,
     specs: [
       { label: "Power Supply Type", value: "Electric" },
       { label: "Department", value: "Machines" },
-      { label: "Price (incl. VAT)", value: "$73.88" },
+      { label: "Price (incl. VAT)", value: "$75.00" },
     ],
   },
   {
@@ -450,13 +450,13 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "Foam cutting, 3 functions in one tool.",
     description: "Foam cutting, 3 functions in one tool.",
-    price: 64.24,
+    price: 65,
     image: "/tools/Picture57.png",
     specs: [
       { label: "Power", value: "18W" },
       { label: "Power Supply Type", value: "Electric" },
       { label: "Department", value: "Machines" },
-      { label: "Price (incl. VAT)", value: "$64.24" },
+      { label: "Price (incl. VAT)", value: "$65.00" },
     ],
   },
   {
@@ -465,7 +465,7 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of Tools equipment from SKYFORGE. See the details below for full specs.",
-    price: 180.61,
+    price: 200,
     image: "/tools/Picture58.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
@@ -474,7 +474,7 @@ export const tools: Product[] = [
       { label: "Magnet spacing", value: "52mm" },
       { label: "Maximum propeller diameter", value: "up to 14\"" },
       { label: "Department", value: "Tools" },
-      { label: "Price (incl. VAT)", value: "$180.61" },
+      { label: "Price (incl. VAT)", value: "$200.00" },
     ],
   },
   {
@@ -483,11 +483,11 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "Determination of the center of gravity (balancing) of the aircraft model.",
     description: "Made by SKYFORGE. Determination of the center of gravity (balancing) of the aircraft model.",
-    price: 25.53,
+    price: 30,
     specs: [
       { label: "Brand", value: "SKYFORGE" },
       { label: "Department", value: "Tools" },
-      { label: "Price (incl. VAT)", value: "$25.53" },
+      { label: "Price (incl. VAT)", value: "$30.00" },
     ],
   },
   {
@@ -496,12 +496,12 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "Control of the angle of deviation of steering surfaces (ailerons, rudders).",
     description: "Made by SKYFORGE. Control of the angle of deviation of steering surfaces (ailerons, rudders).",
-    price: 171.25,
+    price: 200,
     image: "/tools/Picture59.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
       { label: "Department", value: "Tools" },
-      { label: "Price (incl. VAT)", value: "$171.25" },
+      { label: "Price (incl. VAT)", value: "$200.00" },
     ],
   },
   {
@@ -510,13 +510,13 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 60.6,
+    price: 60,
     image: "/tools/Picture60.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
       { label: "Type", value: "Brushless" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$60.60" },
+      { label: "Price (incl. VAT)", value: "$60.00" },
     ],
   },
   {
@@ -525,13 +525,13 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 24.24,
+    price: 25,
     image: "/tools/Picture61.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
       { label: "Type", value: "Speed Controller (ESC) for brushless motor" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$24.24" },
+      { label: "Price (incl. VAT)", value: "$25.00" },
     ],
   },
   {
@@ -540,13 +540,13 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "Radio control panel.",
     description: "Made by RadioLink. Radio control panel.",
-    price: 133.34,
+    price: 150,
     image: "/tools/Picture62.png",
     specs: [
       { label: "Equipment Brand", value: "RadioLink" },
       { label: "Model", value: "AT9S" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$133.34" },
+      { label: "Price (incl. VAT)", value: "$150.00" },
     ],
   },
   {
@@ -555,7 +555,7 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "HRB equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from HRB. See the details below for full specs.",
-    price: 33.12,
+    price: 35,
     image: "/tools/Picture63.png",
     specs: [
       { label: "Equipment Brand", value: "HRB" },
@@ -563,7 +563,7 @@ export const tools: Product[] = [
       { label: "Configuration", value: "3S" },
       { label: "Capacity", value: "1500 mAh" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$33.12" },
+      { label: "Price (incl. VAT)", value: "$35.00" },
     ],
   },
   {
@@ -572,7 +572,7 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "HRB equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from HRB. See the details below for full specs.",
-    price: 36.37,
+    price: 40,
     image: "/tools/Picture64.png",
     specs: [
       { label: "Equipment Brand", value: "HRB" },
@@ -580,7 +580,7 @@ export const tools: Product[] = [
       { label: "Configuration", value: "3S" },
       { label: "Capacity", value: "2200mAh" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$36.37" },
+      { label: "Price (incl. VAT)", value: "$40.00" },
     ],
   },
   {
@@ -589,7 +589,7 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 623.27,
+    price: 650,
     image: "/tools/Picture65.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
@@ -606,7 +606,7 @@ export const tools: Product[] = [
       { label: "Propellers", value: "F5" },
       { label: "Weight", value: "392.6 g (without battery and GoPro camera mount)" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$623.27" },
+      { label: "Price (incl. VAT)", value: "$650.00" },
     ],
   },
   {
@@ -615,7 +615,7 @@ export const tools: Product[] = [
     category: "tool",
     tagline: "SKYFORGE equipment for the workshop.",
     description: "A piece of STEM / aviation equipment equipment from SKYFORGE. See the details below for full specs.",
-    price: 533.7,
+    price: 500,
     image: "/tools/Picture66.png",
     specs: [
       { label: "Brand", value: "SKYFORGE" },
@@ -625,7 +625,7 @@ export const tools: Product[] = [
       { label: "Features", value: "Precise hover, drone swarm programming, multiple flight modes" },
       { label: "Additionally", value: "support for Mission Pads (platforms for scenario programming)" },
       { label: "Department", value: "STEM / aviation equipment" },
-      { label: "Price (incl. VAT)", value: "$533.70" },
+      { label: "Price (incl. VAT)", value: "$500.00" },
     ],
   },
 ];
