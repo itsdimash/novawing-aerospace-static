@@ -5,6 +5,12 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { tools } from "@/data/products";
+import type { Metadata } from "next";
+import { jsonLd, site } from "@/lib/site";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 // All site copy lives here in code. To change any of it, edit this file
 // directly and redeploy -- there's no CMS or admin dashboard behind this site.
@@ -18,13 +24,35 @@ const content = {
   contactHeadline: "Talk to the team.",
   contactDescription:
     "Questions about a build, stock levels, or a bulk order for a launch day or classroom — reach out and someone will get back to you directly.",
-  email: "wongofficialryan@gmail.com",
+  email: site.email,
   address: "RM 2902, 29/F, HO KING COMMERCIAL CENTRE, 2-16 FA YUEN STREET, MONGKOK, KOWLOON HK",
 };
 
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": `${site.url}/#organization`,
+              name: site.name,
+              url: site.url,
+              email: site.email,
+            },
+            {
+              "@type": "WebSite",
+              "@id": `${site.url}/#website`,
+              name: site.name,
+              url: site.url,
+              publisher: { "@id": `${site.url}/#organization` },
+            },
+          ],
+        }) }}
+      />
       <Navbar />
       <main>
         <Hero headline={content.heroHeadline} subhead={content.heroSubhead} />
