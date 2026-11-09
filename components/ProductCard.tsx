@@ -2,10 +2,12 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import type { Product } from "@/data/products";
 import ImageSkeleton from "./ImageSkeleton";
+import { productDescription, productPath } from "@/lib/site";
 
 const ACCENT_TEXT = {
   blueprint: "text-blueprint",
@@ -68,9 +70,18 @@ export default function ProductCard({
       </div>
 
       <div className="flex flex-1 flex-col p-5">
-        <h3 className="font-display text-lg font-semibold text-ink">{product.name}</h3>
+        <h3 className="font-display text-lg font-semibold text-ink">
+          <Link href={productPath(product)} className="hover:underline focus-visible:underline">
+            {product.name}
+          </Link>
+        </h3>
         <p className={`mt-1 text-sm ${accentText}`}>{product.tagline}</p>
-        <p className="mt-3 text-sm leading-relaxed text-ink-muted">{product.description}</p>
+        <p className="mt-3 text-sm leading-relaxed text-ink-muted">{productDescription(product)}</p>
+
+        <Link href={productPath(product)} className="mt-4 self-start text-sm text-ink underline underline-offset-4">
+          Product details
+          <span className="sr-only"> for {product.name}</span>
+        </Link>
 
         <button
           onClick={() => setOpen((o) => !o)}
