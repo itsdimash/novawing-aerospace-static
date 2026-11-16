@@ -1,29 +1,41 @@
 import type { Product } from "@/data/products";
+import { productHref, type Lang } from "@/lib/i18n";
 
 export const site = {
   name: "Aviorafly",
   url: "https://aviorafly.com",
-  title: "Aviorafly | FPV Drones, RC Aircraft & Model Kits",
+  title: "SKYFORGE RC Aircraft Kits, FPV Drones & Parts | Aviorafly",
   description:
-    "Explore FPV drones, drone batteries and parts, RC aircraft, model kits, and workshop tools at Aviorafly. Browse product specifications and contact our team.",
+    "Explore SKYFORGE RC aircraft kits, model airplanes, FPV drones, brushless motors, and aeromodelling materials at Aviorafly, plus batteries and workshop tools. Find products by name, brand, or article number (SKF-…) and contact our team.",
+  keywords: ["SKYFORGE", "SKYFORGE RC aircraft kit", "SKYFORGE FPV drone", "RC airplane kits", "FPV drone parts", "aeromodelling materials", "Aviorafly"],
+  // Registered company name; shown in the footer and structured data once set.
+  legalName: undefined as string | undefined,
   email: "wongofficialryan@gmail.com",
 };
 
-export function productPath(product: Product): string {
-  return `/products/${product.slug}`;
+export function productPath(product: Product, lang: Lang = "en"): string {
+  return productHref(product.slug, lang);
 }
 
-export function productDescription(product: Product): string {
-  if (!product.description.startsWith("A piece of ")) {
-    return product.description;
-  }
+export function productDescription(product: Product, _lang: Lang = "en"): string {
+  return product.description;
+}
 
-  const details = product.specs
-    .filter((spec) => !["Brand", "Equipment Brand", "Department", "Price (incl. VAT)"].includes(spec.label))
-    .slice(0, 3)
-    .map((spec) => `${spec.label}: ${spec.value}`);
+export function brandOf(product: Product): string | undefined {
+  return product.specs.find((spec) => ["Brand", "Equipment Brand"].includes(spec.label))?.value;
+}
 
-  return [product.name, ...details].join(". ");
+// Search-result description: name, brand and article number first, then specs.
+// `product` may be localized; pass the brand read from the English product.
+export function metaDescription(product: Product, lang: Lang = "en", brand?: string): string {
+  const zh = lang === "zh";
+  const ids = [
+    brand ? `${zh ? "品牌：" : "Brand: "}${brand}` : "",
+    product.sku ? `${zh ? "货号：" : "Article: "}${product.sku}` : "",
+  ].filter(Boolean).join(zh ? "。" : ". ");
+  const body = productDescription(product, lang);
+  const rest = body.startsWith(product.name) ? body.slice(product.name.length).replace(/^[.。\s]+/, "") : body;
+  return [product.name, ids, rest].filter(Boolean).join(zh ? "。" : ". ").replace(zh ? /。{2,}/g : /\.{2,}/g, zh ? "。" : ".");
 }
 
 export function jsonLd(value: unknown): string {

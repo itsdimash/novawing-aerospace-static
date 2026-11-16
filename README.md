@@ -5,7 +5,7 @@ The homepage cards link to statically generated product pages with complete
 specifications and an email enquiry action. The catalog has no checkout.
 
 **This is a fully static, code-only site.** There's no CMS or admin
-dashboard — every product, price, and piece of text lives directly in the
+dashboard — every product and piece of text lives directly in the
 code. To change anything, edit the relevant file and redeploy.
 
 ## Getting started

@@ -2,17 +2,20 @@
 
 import { motion } from "framer-motion";
 import { Mail, MapPin } from "lucide-react";
+import { ui, type Lang } from "@/lib/i18n";
 
 export default function Contact({
   headline,
   description,
   email,
   address,
+  lang,
 }: {
   headline: string;
   description: string;
   email: string;
   address: string;
+  lang: Lang;
 }) {
   return (
     <section id="contact" className="border-b border-hairline bg-surface py-20 md:py-28">
@@ -42,7 +45,7 @@ export default function Contact({
                 <Mail size={16} />
               </span>
               <div>
-                <p className="text-xs text-ink-faint">Email</p>
+                <p className="text-xs text-ink-faint">{ui[lang].contact.emailLabel}</p>
                 <p className="mt-0.5 font-mono text-sm text-ink">{email}</p>
               </div>
             </li>
@@ -51,7 +54,7 @@ export default function Contact({
                 <MapPin size={16} />
               </span>
               <div>
-                <p className="text-xs text-ink-faint">Address</p>
+                <p className="text-xs text-ink-faint">{ui[lang].contact.addressLabel}</p>
                 <p className="mt-0.5 font-mono text-sm leading-relaxed text-ink">{address}</p>
               </div>
             </li>

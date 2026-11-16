@@ -3,14 +3,18 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { anchor, switchPath, ui, type Lang } from "@/lib/i18n";
 
-const links = [
-  { href: "/#tools", label: "Catalog" },
-  { href: "/#about", label: "About" },
-  { href: "/#contact", label: "Contact" },
-];
-
-export default function Navbar() {
+export default function Navbar({ lang }: { lang: Lang }) {
+  const t = ui[lang];
+  const pathname = usePathname() ?? "/";
+  const other: Lang = lang === "zh" ? "en" : "zh";
+  const links = [
+    { href: anchor(lang, "tools"), label: t.nav.catalog },
+    { href: anchor(lang, "about"), label: t.nav.about },
+    { href: anchor(lang, "contact"), label: t.nav.contact },
+  ];
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -28,7 +32,7 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="/#top" className="flex items-center gap-2.5">
+        <a href={anchor(lang, "top")} className="flex items-center gap-2.5">
           <svg
             width="22"
             height="22"
@@ -57,10 +61,19 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
+          <a
+              href={switchPath(pathname, other)}
+              hrefLang={other === "zh" ? "zh-CN" : "en"}
+              lang={other === "zh" ? "zh-CN" : "en"}
+              title={t.switchTitle}
+              className="border border-hairline2 px-3 py-1 text-xs text-ink transition-colors hover:border-blueprint hover:text-blueprint"
+            >
+              {t.switchLabel}
+            </a>
         </nav>
 
         <button
-          aria-label={open ? "Close menu" : "Open menu"}
+          aria-label={open ? t.nav.closeMenu : t.nav.openMenu}
           onClick={() => setOpen((o) => !o)}
           className="text-ink md:hidden"
         >
@@ -88,6 +101,16 @@ export default function Navbar() {
                   {l.label}
                 </a>
               ))}
+              <a
+              href={switchPath(pathname, other)}
+              hrefLang={other === "zh" ? "zh-CN" : "en"}
+              lang={other === "zh" ? "zh-CN" : "en"}
+              title={t.switchTitle}
+              onClick={() => setOpen(false)}
+              className="py-2.5 text-sm text-ink-muted transition-colors hover:text-ink"
+            >
+              {t.switchLabel}
+            </a>
             </div>
           </motion.nav>
         )}

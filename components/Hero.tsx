@@ -2,12 +2,15 @@
 
 import { useRef } from "react";
 import { motion, useMotionTemplate, useMotionValue, useReducedMotion } from "framer-motion";
+import { ui, type Lang } from "@/lib/i18n";
 import BlueprintAirplane from "./BlueprintAirplane";
 
 export default function Hero({
   headline,
   subhead,
+  lang,
 }: {
+  lang: Lang;
   headline: string;
   subhead: string;
 }) {
@@ -52,20 +55,20 @@ export default function Hero({
               href="#tools"
               className="inline-flex items-center border border-ignition bg-ignition px-5 py-3 text-sm font-medium text-bg transition-colors hover:bg-ignition-dim hover:border-ignition-dim"
             >
-              View the full catalog
+              {ui[lang].hero.cta}
             </a>
             <a
               href="#contact"
               className="inline-flex items-center border border-hairline2 px-5 py-3 text-sm font-medium text-ink transition-colors hover:border-blueprint hover:text-blueprint"
             >
-              Get in touch
+              {ui[lang].hero.touch}
             </a>
           </div>
 
           <div className="mt-14 flex items-center gap-6 font-mono text-xs text-ink-faint">
-            <span>Curated catalog</span>
+            <span>{ui[lang].hero.tag1}</span>
             <span className="h-px w-8 bg-hairline2" />
-            <span>Specs verified</span>
+            <span>{ui[lang].hero.tag2}</span>
           </div>
         </motion.div>
 

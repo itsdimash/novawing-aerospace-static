@@ -75,3 +75,10 @@ body {
   background: linear-gradient(100deg, transparent 30%, rgba(110, 168, 254, 0.14) 50%, transparent 70%);
   animation: shimmer-sweep 1.6s ease-in-out infinite;
 }
+
+/* Simplified Chinese pages: use system CJK fonts after the Latin web fonts, and
+   avoid synthetic italics, which look wrong on Chinese characters. */
+html[lang="zh-CN"] .font-body { font-family: var(--font-body), "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", "Source Han Sans SC", sans-serif; }
+html[lang="zh-CN"] .font-display { font-family: var(--font-display), "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", "Source Han Sans SC", sans-serif; }
+html[lang="zh-CN"] .font-mono { font-family: var(--font-mono), "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", monospace; }
+html[lang="zh-CN"] .italic { font-style: normal; }

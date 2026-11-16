@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import type { Product } from "@/data/products";
 import ProductCard from "./ProductCard";
+import type { Lang } from "@/lib/i18n";
 
 export default function ProductsSection({
   id,
@@ -10,6 +11,7 @@ export default function ProductsSection({
   title,
   description,
   products,
+  lang,
   accent,
   tone,
 }: {
@@ -18,6 +20,7 @@ export default function ProductsSection({
   title: string;
   description: string;
   products: Product[];
+  lang: Lang;
   accent: "blueprint" | "ignition" | "steel";
   tone: "surface" | "bg";
 }) {
@@ -42,7 +45,7 @@ export default function ProductsSection({
           className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
         >
           {products.map((p, i) => (
-            <ProductCard key={p.slug} product={p} accent={accent} priority={i < 8} />
+            <ProductCard key={p.slug} product={p} lang={lang} accent={accent} priority={i < 8} />
           ))}
         </motion.div>
       </div>
