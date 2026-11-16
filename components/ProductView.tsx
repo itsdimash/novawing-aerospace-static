@@ -21,7 +21,9 @@ export default function ProductView({ slug, lang }: { slug: string; lang: Lang }
   const brandName = brandOf(base);
   const department = localizedSpec(base, product, "Department");
   const colon = lang === "zh" ? "：" : ": ";
-  const enquiry = `mailto:${site.email}?subject=${encodeURIComponent(t.mailSubject(product.name))}&body=${encodeURIComponent(t.mailBody(product.name, url))}`;
+  const mailto = `mailto:${site.email}?subject=${encodeURIComponent(t.mailSubject(product.name))}&body=${encodeURIComponent(t.mailBody(product.name, url))}`;
+  // Opens a Gmail compose window (new tab) with address, subject and message filled in.
+  const gmail = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(site.email)}&su=${encodeURIComponent(t.mailSubject(product.name))}&body=${encodeURIComponent(t.mailBody(product.name, url))}`;
 
   return (
     <>
@@ -75,10 +77,11 @@ export default function ProductView({ slug, lang }: { slug: string; lang: Lang }
               </p>
             )}
             <p className="mt-6 text-base leading-relaxed text-ink">{description}</p>
-            <a href={enquiry} className="mt-8 inline-flex min-h-11 items-center bg-blueprint px-6 py-3 text-sm font-semibold text-bg transition-colors hover:bg-blueprint-dim focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blueprint">
+            <a href={gmail} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex min-h-11 items-center bg-blueprint px-6 py-3 text-sm font-semibold text-bg transition-colors hover:bg-blueprint-dim focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blueprint">
               {t.ask}
             </a>
             <p className="mt-3 text-sm leading-relaxed text-ink-muted">{t.askNote}</p>
+            <p className="mt-2 text-sm leading-relaxed text-ink-muted">{t.orEmail} <a href={mailto} className="underline underline-offset-4">{site.email}</a></p>
           </div>
         </div>
         <section aria-labelledby="specifications" className="mt-16 md:mt-24">
