@@ -28,7 +28,14 @@ export default function Contact({ headline, description, address, lang }: { head
   return (
     <section id="contact" className="border-b border-hairline bg-surface py-20 md:py-28">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 md:grid-cols-2 md:gap-20">
-        <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.5 }}><h2 className="text-balance font-display text-3xl font-semibold text-ink md:text-4xl">{headline}</h2><p className="mt-4 max-w-md leading-relaxed text-ink-muted">{description}</p></motion.div>
+        <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.5 }}>
+          <h2 className="text-balance font-display text-3xl font-semibold text-ink md:text-4xl">{headline}</h2>
+          <p className="mt-4 max-w-md leading-relaxed text-ink-muted">{description}</p>
+          <p className="mt-5 break-words font-semibold text-ink">sales@aviorafly.com</p>
+          <p className="mt-1 text-sm leading-relaxed text-ink-muted">
+            {zh ? "此邮箱尚未启用，请使用联系表单留言。" : "Please use the contact form while this mailbox is being set up."}
+          </p>
+        </motion.div>
         <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.5, delay: 0.1 }} className="border border-hairline bg-bg p-8">
           <form onSubmit={submitForm} className="space-y-5"><input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} aria-hidden="true" />
             <div><label htmlFor="aviorafly-name" className="text-sm font-medium text-ink">{zh ? "您的姓名" : "Your name"}</label><input id="aviorafly-name" name="name" required autoComplete="name" className="mt-2 w-full border border-hairline2 bg-surface px-3 py-3 text-ink outline-none placeholder:text-ink-faint focus:border-blueprint" placeholder={zh ? "姓名" : "Name"} /></div>
