@@ -31,7 +31,6 @@ export default function HomePage({ lang }: { lang: Lang }) {
               name: site.name,
               ...(site.legalName ? { legalName: site.legalName } : {}),
               url: site.url,
-              email: site.email,
               description: t.seo.description,
               brand: brands.map((name) => ({ "@type": "Brand", name })),
             },
@@ -74,7 +73,6 @@ export default function HomePage({ lang }: { lang: Lang }) {
         <Contact
           headline={t.contact.headline}
           description={t.contact.description}
-          email={site.email}
           address={t.contact.address}
           lang={lang}
         />

@@ -10,7 +10,6 @@ export const site = {
   keywords: ["SKYFORGE", "SKYFORGE RC aircraft kit", "SKYFORGE FPV drone", "RC airplane kits", "FPV drone parts", "aeromodelling materials", "Aviorafly"],
   // Registered company name; shown in the footer and structured data once set.
   legalName: undefined as string | undefined,
-  email: "wongofficialryan@gmail.com",
 };
 
 export function productPath(product: Product, lang: Lang = "en"): string {
