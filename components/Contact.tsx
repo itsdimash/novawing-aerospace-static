@@ -4,6 +4,7 @@ import { type FormEvent, useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 import type { Lang } from "@/lib/i18n";
+import { site } from "@/lib/site";
 
 export default function Contact({ headline, description, address, lang }: { headline: string; description: string; address: string; lang: Lang }) {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
@@ -31,10 +32,7 @@ export default function Contact({ headline, description, address, lang }: { head
         <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.5 }}>
           <h2 className="text-balance font-display text-3xl font-semibold text-ink md:text-4xl">{headline}</h2>
           <p className="mt-4 max-w-md leading-relaxed text-ink-muted">{description}</p>
-          <p className="mt-5 break-words font-semibold text-ink">sales@aviorafly.com</p>
-          <p className="mt-1 text-sm leading-relaxed text-ink-muted">
-            {zh ? "此邮箱尚未启用，请使用联系表单留言。" : "Please use the contact form while this mailbox is being set up."}
-          </p>
+          <p className="mt-5 break-words font-semibold text-ink">{site.email}</p>
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.5, delay: 0.1 }} className="border border-hairline bg-bg p-8">
           <form onSubmit={submitForm} className="space-y-5"><input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} aria-hidden="true" />

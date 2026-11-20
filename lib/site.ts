@@ -4,6 +4,8 @@ import { productHref, type Lang } from "@/lib/i18n";
 export const site = {
   name: "Aviorafly",
   url: "https://aviorafly.com",
+  // Public enquiry mailbox: shown in the contact section and used by the product-page "Ask" button.
+  email: "793667581@qq.com",
   title: "SKYFORGE RC Aircraft Kits, FPV Drones & Parts | Aviorafly",
   description:
     "Explore SKYFORGE RC aircraft kits, model airplanes, FPV drones, brushless motors, and aeromodelling materials at Aviorafly, plus batteries and workshop tools. Find products by name, brand, or article number (SKF-…) and contact our team.",
@@ -11,6 +13,12 @@ export const site = {
   // Registered company name; shown in the footer and structured data once set.
   legalName: undefined as string | undefined,
 };
+
+// Opens a pre-filled Gmail compose window (web Gmail) addressed to the enquiry mailbox.
+export function gmailComposeUrl(subject: string, body: string, to: string = site.email): string {
+  const params = new URLSearchParams({ view: "cm", fs: "1", to, su: subject, body });
+  return `https://mail.google.com/mail/?${params.toString().replace(/\+/g, "%20")}`;
+}
 
 export function productPath(product: Product, lang: Lang = "en"): string {
   return productHref(product.slug, lang);
