@@ -12,11 +12,13 @@ export interface Product {
   description: string;
   specs: Spec[];
   image?: string;
+  price?: number;
 }
 
 export const tools: Product[] = [
   {
     slug: "skyforge-quick-build-model-kit-type-1",
+    price: 450,
     name: "SKYFORGE Quick Build Model Kit, Type 1 (Hand-Launch Glider)",
     sku: "SKF-98E786",
     category: "tool",
@@ -35,6 +37,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-quick-build-model-kit-type-2",
+    price: 400,
     name: "SKYFORGE Quick Build Model Kit, Type 2 (550 mm Wingspan)",
     sku: "SKF-25K847",
     category: "tool",
@@ -51,6 +54,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-quick-build-model-kit-type-3",
+    price: 750,
     name: "SKYFORGE Quick Build Model Kit, Type 3 (Electric Airplane)",
     sku: "SKF-79A211",
     category: "tool",
@@ -69,6 +73,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-balsa-wood-airplane-kit",
+    price: 750,
     name: "SKYFORGE Balsa Wood Airplane Kit",
     sku: "SKF-89K969",
     category: "tool",
@@ -90,6 +95,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-flying-wing",
+    price: 600,
     name: "SKYFORGE Flying Wing",
     sku: "SKF-34M485",
     category: "tool",
@@ -109,6 +115,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-epo-foam-airplane-kit",
+    price: 500,
     name: "SKYFORGE EPO Foam Airplane Kit",
     sku: "SKF-47A155",
     category: "tool",
@@ -127,6 +134,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-vintage-airplane-model",
+    price: 650,
     name: "SKYFORGE Vintage Airplane Model",
     sku: "SKF-62H275",
     category: "tool",
@@ -145,6 +153,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-miniature-aircraft",
+    price: 500,
     name: "SKYFORGE Miniature Aircraft",
     sku: "SKF-65B307",
     category: "tool",
@@ -167,6 +176,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-military-aircraft-kit",
+    price: 500,
     name: "SKYFORGE Military Aircraft Kit",
     sku: "SKF-94T969",
     category: "tool",
@@ -190,6 +200,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-trainer-aircraft",
+    price: 750,
     name: "SKYFORGE Trainer Aircraft",
     sku: "SKF-19K715",
     category: "tool",
@@ -218,6 +229,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-rc-flying-wing",
+    price: 400,
     name: "SKYFORGE RC Flying Wing",
     sku: "SKF-62H335",
     category: "tool",
@@ -247,6 +259,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-battery-for-fpv-drone",
+    price: 65,
     name: "SKYFORGE Battery for FPV Drone",
     category: "tool",
     tagline: "6S LiPo battery, 1500 mAh, for FPV drones.",
@@ -261,6 +274,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-video-sensors-for-fpv-drone-5-8-ghz",
+    price: 150,
     name: "SKYFORGE Video Sensors for FPV Drone (5.8 GHz)",
     category: "tool",
     tagline: "5.8 GHz FPV video display, 4.3\" screen, built-in receiver with DVR.",
@@ -276,6 +290,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-radio-receiver-for-fpv-drone",
+    price: 200,
     name: "SKYFORGE Radio Receiver for FPV Drone",
     category: "tool",
     tagline: "ExpressLRS radio link for FPV drones, 915 MHz or 2.4 GHz.",
@@ -293,6 +308,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-aeromodelling-materials-set",
+    price: 200,
     name: "SKYFORGE Aeromodelling Materials Set (7 items)",
     sku: "SKF-93C749",
     category: "tool",
@@ -307,6 +323,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-fiberglass-cloth",
+    price: 20,
     name: "SKYFORGE Fiberglass Cloth, 34 g/m², 1 m²",
     sku: "SKF-10B669",
     category: "tool",
@@ -324,6 +341,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-covering-film-set",
+    price: 150,
     name: "SKYFORGE Covering Film, Set (3 colors)",
     sku: "SKF-78E719",
     category: "tool",
@@ -339,6 +357,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-rubber-wheels-for-rc-aircraft",
+    price: 60,
     name: "SKYFORGE Rubber Wheels for RC Aircraft, Assorted (100 / 70 / 50 / 25 mm)",
     sku: "SKF-70R586",
     category: "tool",
@@ -354,6 +373,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-carbon-fiber-tube-roll-wrapped",
+    price: 100,
     name: "SKYFORGE Carbon Fiber Tube (Roll-Wrapped), Assorted (5×3, 8×6, 10×8, 12×10 mm)",
     sku: "SKF-93A539",
     category: "tool",
@@ -369,6 +389,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-carbon-fiber-rods",
+    price: 35,
     name: "SKYFORGE Carbon Fiber Rods, Assorted (1 / 1.5 / 2 / 3 mm)",
     sku: "SKF-98C980",
     category: "tool",
@@ -384,6 +405,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-servo-pushrods",
+    price: 40,
     name: "SKYFORGE Servo Pushrods, 100 pcs",
     sku: "SKF-45B673",
     category: "tool",
@@ -399,6 +421,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-rc-aircraft-spare-parts-set",
+    price: 200,
     name: "SKYFORGE RC Aircraft Spare Parts Set (3 sizes × 20 pcs: 12×24, 16×29, 20×36 mm)",
     sku: "SKF-18M232",
     category: "tool",
@@ -414,6 +437,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-airplane-spinner",
+    price: 25,
     name: "SKYFORGE Airplane Spinner, 3.0 mm Motor Shaft",
     sku: "SKF-70C341",
     category: "tool",
@@ -429,6 +453,7 @@ export const tools: Product[] = [
   },
   {
     slug: "foam-board-cutting-machine",
+    price: 75,
     name: "Foam Board Cutting Machine",
     category: "tool",
     tagline: "Machine for cutting foam board when building models.",
@@ -440,6 +465,7 @@ export const tools: Product[] = [
   },
   {
     slug: "3-in-1-foam-cutter",
+    price: 65,
     name: "3-in-1 foam cutter",
     category: "tool",
     tagline: "Electric foam cutter, 18 W, with three functions in one tool.",
@@ -453,6 +479,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-propeller-balancer",
+    price: 200,
     name: "SKYFORGE Propeller Balancer",
     sku: "SKF-96R843",
     category: "tool",
@@ -471,6 +498,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-cg-balancer",
+    price: 30,
     name: "SKYFORGE Center of Gravity (CG) Balancer",
     sku: "SKF-32T246",
     category: "tool",
@@ -484,6 +512,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-control-surface-throw-meter",
+    price: 200,
     name: "SKYFORGE Control Surface Throw Meter",
     sku: "SKF-22B656",
     category: "tool",
@@ -498,6 +527,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-brushless-motor",
+    price: 60,
     name: "SKYFORGE Brushless Motor",
     sku: "SKF-96C981",
     category: "tool",
@@ -513,6 +543,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-brushless-speed-controller",
+    price: 25,
     name: "SKYFORGE Brushless Speed Controller (ESC)",
     sku: "SKF-13E446",
     category: "tool",
@@ -528,6 +559,7 @@ export const tools: Product[] = [
   },
   {
     slug: "radiolink-at9s-transmitter",
+    price: 150,
     name: "RadioLink AT9S Transmitter",
     category: "tool",
     tagline: "Radio transmitter for RC models.",
@@ -541,6 +573,7 @@ export const tools: Product[] = [
   },
   {
     slug: "hrb-lipo-3s-1500-mah-battery",
+    price: 35,
     name: "HRB Lipo 3S 1500 mAh Battery",
     category: "tool",
     tagline: "3S LiPo battery, 1500 mAh.",
@@ -556,6 +589,7 @@ export const tools: Product[] = [
   },
   {
     slug: "hrb-lipo-3s-2200mah-battery",
+    price: 40,
     name: "HRB Lipo 3S 2200mAh Battery",
     category: "tool",
     tagline: "3S LiPo battery, 2200 mAh.",
@@ -571,6 +605,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-high-speed-fpv-drone",
+    price: 650,
     name: "SKYFORGE High-Speed FPV Drone",
     sku: "SKF-46E834",
     category: "tool",
@@ -597,6 +632,7 @@ export const tools: Product[] = [
   },
   {
     slug: "skyforge-programmable-drone-for-educational-purposes",
+    price: 500,
     name: "SKYFORGE programmable drone for educational purposes",
     category: "tool",
     tagline: "Programmable educational drone with 720p video and swarm programming.",

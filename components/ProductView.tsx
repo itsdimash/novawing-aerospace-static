@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import { tools } from "@/data/products";
 import { anchor, homePath, ui, type Lang } from "@/lib/i18n";
 import { localizeProduct, localizedSpec } from "@/lib/localize";
-import { brandOf, jsonLd, productDescription, productPath, site } from "@/lib/site";
+import { brandOf, formatProductPrice, jsonLd, productDescription, productPath, site } from "@/lib/site";
 
 export default function ProductView({ slug, lang }: { slug: string; lang: Lang }) {
   const base = tools.find((item) => item.slug === slug);
@@ -14,6 +14,7 @@ export default function ProductView({ slug, lang }: { slug: string; lang: Lang }
 
   const t = ui[lang].product;
   const product = localizeProduct(base, lang);
+  const price = formatProductPrice(product);
   const description = productDescription(product, lang);
   const url = `${site.url}${productPath(product, lang)}`;
   const homeUrl = `${site.url}${lang === "zh" ? "/zh" : "/"}`;
@@ -74,6 +75,12 @@ export default function ProductView({ slug, lang }: { slug: string; lang: Lang }
               </p>
             )}
             <p className="mt-6 text-base leading-relaxed text-ink">{description}</p>
+            {price && (
+              <p className="mt-6 text-ink">
+                <span className="text-2xl font-semibold tabular-nums">{price}</span>
+                <span className="ml-2 text-sm text-ink-muted">{t.priceIncludesVat}</span>
+              </p>
+            )}
             <Link href={anchor(lang, "contact")} className="mt-8 inline-flex min-h-11 items-center bg-blueprint px-6 py-3 text-sm font-semibold text-bg transition-colors hover:bg-blueprint-dim focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blueprint">
               {t.ask}
             </Link>

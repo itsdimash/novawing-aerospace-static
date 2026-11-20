@@ -16,6 +16,13 @@ export function productPath(product: Product, lang: Lang = "en"): string {
   return productHref(product.slug, lang);
 }
 
+const priceNumberFormat = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 });
+
+// Preserve the catalog's historical dollar notation until the currency code is confirmed.
+export function formatProductPrice(product: Product): string | undefined {
+  return product.price === undefined ? undefined : `$${priceNumberFormat.format(product.price)}`;
+}
+
 export function productDescription(product: Product, _lang: Lang = "en"): string {
   return product.description;
 }
